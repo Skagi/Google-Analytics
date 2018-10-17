@@ -1,0 +1,65 @@
+$this->addElement('submit', 'send',array('label' => 'Wyślij', 'class'=> 'submit', 'value'=> ' SEND', 'onClick' => 'gtag(\'event\', \'Verseo Formularz\')'));
+
+
+if (location.pathname == "/kurs-niemieckiego/") {
+jQuery(document).on('click', '.et_pb_button.et_pb_pricing_table_button', function () {
+gtag('event', 'Zakupiony Produkt Verseo')
+});
+}
+
+
+
+
+onClick="gtag('event', 'Wyslany Formularz Verseo')"
+
+
+
+
+function hook_anal() {
+    ?>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46837735-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-46837735-2');
+    </script>
+    <?php
+}
+add_action('wp_head', 'hook_anal');
+
+
+
+
+
+
+
+onClick="ga( 'send', 'event', 'Contact Form', 'submit' )"
+
+
+
+add_action( 'wp_footer', 'mycustom_wp_footer' );
+ 
+function mycustom_wp_footer() {
+?>
+<script type="text/javascript">
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+   jQuery( "body" ).append("<img height=\"1\" width=\"1\" style=\"border-style:none;\" alt=\"\" src=\"//www.googleadservices.com/pagead/conversion/857973653/?label=jIZrCJTEnW8QlceOmQM&amp;guid=ON&amp;script=0\"/>");
+}, false );
+</script>
+<?php
+}
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107281332-1"></script> 
+<script> 
+window.dataLayer = window.dataLayer || []; 
+function gtag(){dataLayer.push(arguments)}; 
+gtag('js', new Date()); 
+if(location.pathname=="/john-barry") {gtag('event','rejestracja');	<----- Event na podziękowaniu!
+gtag('config', 'UA-107281332-1'); 
+</script> 
